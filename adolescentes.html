@@ -184,5 +184,10 @@ details p{margin:10px 0 0;color:#3a424b}
 <script>
 document.querySelectorAll('[data-cta]').forEach(a=>a.addEventListener('click',()=>{try{fbq('trackCustom','ClicComprar',{content_name:'Adolescentes y celular',value:12900,currency:'ARS'})}catch(e){}}));
 </script>
+<script>
+// Pasa las cookies de Meta (_fbc/_fbp) al carrito de Shopify: así la venta se une al anuncio aunque se pague en Mercado Pago
+(function(){function ck(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]*)');return m?decodeURIComponent(m[1]):''}
+document.querySelectorAll('a[href*="myshopify.com/cart/"]').forEach(function(a){a.addEventListener('click',function(){try{var fbc=ck('_fbc'),fbp=ck('_fbp'),id=new URLSearchParams(location.search).get('fbclid');if(!fbc&&id)fbc='fb.1.'+Date.now()+'.'+id;var u=new URL(a.href.split('?')[0]);if(fbc)u.searchParams.set('attributes[_fbc]',fbc);if(fbp)u.searchParams.set('attributes[_fbp]',fbp);a.href=u.toString()}catch(e){}})})})();
+</script>
 </body>
 </html>
