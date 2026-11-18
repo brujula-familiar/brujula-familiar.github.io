@@ -61,7 +61,19 @@ details[open] summary:after{content:"–"}
 details p{margin:10px 0 0;color:#3a424b}
 .fin{font-size:13px;color:var(--g);text-align:center;padding:26px 18px 40px}
 @media(min-width:700px){h1{font-size:40px}h2{font-size:30px}section{padding:58px 0}}
-</style>
+
+.esc{display:grid;gap:14px;margin-top:18px}
+.op{border:2px solid #d9dee3;border-radius:14px;padding:16px;background:#fff;position:relative}
+.op.top{border-color:var(--c);box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.op .tag{position:absolute;top:-12px;left:14px;background:var(--o);color:#1f2328;font-weight:800;font-size:13px;padding:3px 10px;border-radius:20px}
+.op h3{margin:0 0 4px;font-size:19px}
+.op .pr{font-size:26px;font-weight:800;color:var(--c);margin:2px 0}
+.op .pr s{font-size:16px;color:var(--g);font-weight:400;margin-left:6px}
+.op .ah{display:inline-block;background:var(--c2);color:var(--c);font-weight:700;font-size:13px;padding:2px 8px;border-radius:6px}
+.op p{margin:6px 0 10px;color:var(--g);font-size:15px}
+.op .btn{display:block;text-align:center;margin-top:8px}
+@media(min-width:760px){.esc{grid-template-columns:1fr 1fr 1fr}}
+html{scroll-behavior:smooth}</style>
 </head>
 <body>
 
@@ -71,7 +83,7 @@ details p{margin:10px 0 0;color:#3a424b}
 <h1>Si mañana tu mamá recibe un audio con tu voz pidiendo plata, ¿cómo sabe que no sos vos?</h1>
 <p class="sub">El Escudo de la Familia es una guía para Argentina que hacés <strong>junto con tus viejos</strong>: eligen una palabra clave de la familia, configuran WhatsApp, el chip, el banco y la billetera virtual en una tarde, y saben qué hacer en los primeros 30 minutos si algo pasa.</p>
 <img class="img" src="esc-portada.png" alt="Escudo de la Familia">
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68151631216939:1" data-cta="hero">Quiero el Escudo · $14.900</a>
+<a class="btn" href="#comprar" data-cta="hero">Quiero el Escudo · $14.900</a>
 <p class="mini">Pago único en pesos · Mercado Pago o tarjeta · Te llega al mail al instante · Garantía de 7 días</p>
 </div>
 </section>
@@ -132,7 +144,7 @@ details p{margin:10px 0 0;color:#3a424b}
 <li><b>Planilla "Quién revisa qué":</b> para repartir las tareas entre hermanos, con la fecha de la próxima revisión. En PDF y en Excel o Google Sheets.</li>
 <li><b>Mensaje para el grupo de la familia:</b> listo para copiar y pegar en el WhatsApp familiar.</li>
 </ul>
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68151631216939:1" data-cta="medio">Quiero el Escudo completo</a>
+<a class="btn" href="#comprar" data-cta="medio">Quiero el Escudo completo</a>
 <p class="mini">Te llega todo por mail apenas se acredita el pago</p>
 </div>
 </section>
@@ -153,8 +165,7 @@ details p{margin:10px 0 0;color:#3a424b}
 <div class="w">
 <div class="oferta">
 <h2 style="margin-bottom:4px">Escudo de la Familia</h2>
-<p class="precio">$14.900</p>
-<p class="pesos">Pago único en pesos, con Mercado Pago, débito o tarjeta.</p>
+<p class="pesos">Qué incluye:</p>
 <ul class="ok">
 <li>Guía de más de 40 páginas en PDF</li>
 <li>Cartel para la heladera</li>
@@ -165,7 +176,31 @@ details p{margin:10px 0 0;color:#3a424b}
 <li>Hecho para Argentina: ANSES, PAMI, bancos, billeteras y dónde denunciar</li>
 <li>Acceso inmediato por mail</li>
 </ul>
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68151631216939:1" data-cta="oferta">Quiero el Escudo</a>
+<div class="esc">
+<div class="op">
+<h3>1 · El Escudo</h3>
+<p class="pr">$14.900</p>
+<p>Solo el Escudo de la Familia.</p>
+<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68151631216939:1" data-cta="op1" data-val="14900">Quiero solo el Escudo</a>
+</div>
+<div class="op top">
+<span class="tag">EL MÁS ELEGIDO</span>
+<h3>2 · Dúo Familia</h3>
+<p class="pr">$19.900<s>$27.800</s></p>
+<span class="ah">Ahorrás $7.900</span>
+<p>El Escudo + la Carpeta de la Familia: la familia cuidada de estafas y los papeles importantes en orden.</p>
+<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1,68151631216939:1?discount=DUO" data-cta="op2" data-val="19900">Quiero el Dúo</a>
+</div>
+<div class="op">
+<span class="tag">MÁS COMPLETO</span>
+<h3>3 · Kit Familia completo</h3>
+<p class="pr">$24.900<s>$40.700</s></p>
+<span class="ah">Ahorrás $15.800</span>
+<p>La Carpeta + el Escudo + Mente Activa (100 hojas para imprimir con ejercicios para los mayores de la casa).</p>
+<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1,68151631216939:1,68134890799403:1?discount=KIT" data-cta="op3" data-val="24900">Quiero el Kit completo</a>
+</div>
+</div>
+<p class="pesos" style="text-align:center;margin-top:10px">Pago único en pesos, con Mercado Pago, débito o tarjeta. Todo llega por mail al instante.</p>
 </div>
 <div class="gar">
 <div class="ico">🛡️</div>
@@ -185,19 +220,19 @@ details p{margin:10px 0 0;color:#3a424b}
 <details><summary>¿Nombra bancos o billeteras en particular?</summary><p>Usa la billetera más usada como ejemplo y te dice qué buscar en la sección de seguridad de cualquier banco o billetera. Los pasos los hacés vos en tu app.</p></details>
 <details><summary>¿Reemplaza a un abogado?</summary><p>No. Es una guía práctica para prevenir y para actuar en la primera media hora. Si ya perdiste plata o el banco no responde, te dice cuándo consultar con un abogado y dónde reclamar.</p></details>
 <details><summary>¿Cómo lo recibo?</summary><p>Apenas se acredita el pago te llega un mail con el link para descargar la guía, el cartel, la tarjeta, el checklist, la planilla y el mensaje.</p></details>
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68151631216939:1" data-cta="final">Quiero el Escudo · $14.900</a>
+<a class="btn" href="#comprar" data-cta="final">Quiero el Escudo · $14.900</a>
 <p class="mini">Garantía de 7 días · Pago seguro con Mercado Pago</p>
 </div>
 </section>
 
 <div class="fin">Brújula Familiar · soporte.tiendaecomm@gmail.com<br>Guía orientativa: no reemplaza a un abogado. Los pasos de las aplicaciones pueden cambiar.<br>Brújula Familiar no tiene relación con ANSES, PAMI, el BCRA ni con ningún banco o billetera.<br>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</div>
 <script>
-document.querySelectorAll('[data-cta]').forEach(a=>a.addEventListener('click',()=>{try{fbq('trackCustom','ClicComprar',{content_name:'Escudo de la Familia',value:14900,currency:'ARS'})}catch(e){}}));
+document.querySelectorAll('[data-val]').forEach(a=>a.addEventListener('click',()=>{try{fbq('trackCustom','ClicComprar',{content_name:'Escudo de la Familia - '+a.dataset.cta,value:+a.dataset.val,currency:'ARS'})}catch(e){}}));
 </script>
 <script>
 // Pasa las cookies de Meta (_fbc/_fbp) al carrito de Shopify: así la venta se une al anuncio aunque se pague en Mercado Pago
 (function(){function ck(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]*)');return m?decodeURIComponent(m[1]):''}
-document.querySelectorAll('a[href*="myshopify.com/cart/"]').forEach(function(a){a.addEventListener('click',function(){try{var fbc=ck('_fbc'),fbp=ck('_fbp'),id=new URLSearchParams(location.search).get('fbclid');if(!fbc&&id)fbc='fb.1.'+Date.now()+'.'+id;var u=new URL(a.href.split('?')[0]);if(fbc)u.searchParams.set('attributes[_fbc]',fbc);if(fbp)u.searchParams.set('attributes[_fbp]',fbp);a.href=u.toString()}catch(e){}})})})();
+document.querySelectorAll('a[href*="myshopify.com/cart/"]').forEach(function(a){a.addEventListener('click',function(){try{var fbc=ck('_fbc'),fbp=ck('_fbp'),id=new URLSearchParams(location.search).get('fbclid');if(!fbc&&id)fbc='fb.1.'+Date.now()+'.'+id;var u=new URL(a.href);if(fbc)u.searchParams.set('attributes[_fbc]',fbc);if(fbp)u.searchParams.set('attributes[_fbp]',fbp);a.href=u.toString()}catch(e){}})})})();
 </script>
 </body>
 </html>

@@ -61,7 +61,19 @@ details[open] summary:after{content:"–"}
 details p{margin:10px 0 0;color:#3a424b}
 .fin{font-size:13px;color:var(--g);text-align:center;padding:26px 18px 40px}
 @media(min-width:700px){h1{font-size:40px}h2{font-size:30px}section{padding:58px 0}}
-</style>
+
+.esc{display:grid;gap:14px;margin-top:18px}
+.op{border:2px solid #d9dee3;border-radius:14px;padding:16px;background:#fff;position:relative}
+.op.top{border-color:var(--c);box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.op .tag{position:absolute;top:-12px;left:14px;background:var(--o);color:#1f2328;font-weight:800;font-size:13px;padding:3px 10px;border-radius:20px}
+.op h3{margin:0 0 4px;font-size:19px}
+.op .pr{font-size:26px;font-weight:800;color:var(--c);margin:2px 0}
+.op .pr s{font-size:16px;color:var(--g);font-weight:400;margin-left:6px}
+.op .ah{display:inline-block;background:var(--c2);color:var(--c);font-weight:700;font-size:13px;padding:2px 8px;border-radius:6px}
+.op p{margin:6px 0 10px;color:var(--g);font-size:15px}
+.op .btn{display:block;text-align:center;margin-top:8px}
+@media(min-width:760px){.esc{grid-template-columns:1fr 1fr 1fr}}
+html{scroll-behavior:smooth}</style>
 </head>
 <body>
 
@@ -71,7 +83,7 @@ details p{margin:10px 0 0;color:#3a424b}
 <h1>Si mañana te pasa algo, ¿tu familia sabe dónde está todo?</h1>
 <p class="sub">La Carpeta de la Familia te ayuda a dejar anotado, en una tarde, lo que tu familia va a necesitar: cuentas, seguros, servicios, papeles y tus deseos. Con los trámites de Argentina explicados paso a paso.</p>
 <img class="img" src="carp-portada.png" alt="La Carpeta de la Familia">
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1" data-cta="hero">Quiero la carpeta · $12.900</a>
+<a class="btn" href="#comprar" data-cta="hero">Quiero la carpeta · $12.900</a>
 <p class="mini">Pago único en pesos · Mercado Pago o tarjeta · Garantía de 7 días</p>
 </div>
 </section>
@@ -134,7 +146,7 @@ details p{margin:10px 0 0;color:#3a424b}
 <img src="carp-ficha-datos.png" alt="Ficha de datos personales">
 <img src="carp-ficha-salud.png" alt="Ficha de salud">
 </div>
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1" data-cta="medio">Quiero la carpeta completa</a>
+<a class="btn" href="#comprar" data-cta="medio">Quiero la carpeta completa</a>
 <p class="mini">Te llega todo por mail apenas se acredita el pago</p>
 </div>
 </section>
@@ -143,8 +155,7 @@ details p{margin:10px 0 0;color:#3a424b}
 <div class="w">
 <div class="oferta">
 <h2 style="margin-bottom:4px">La Carpeta de la Familia</h2>
-<p class="precio">$12.900</p>
-<p class="pesos">Pago único en pesos, con Mercado Pago, débito o tarjeta.</p>
+<p class="pesos">Qué incluye:</p>
 <ul class="ok">
 <li>Guía de 12 páginas en PDF</li>
 <li>Planilla de 13 pestañas (Excel y Google Sheets)</li>
@@ -152,7 +163,31 @@ details p{margin:10px 0 0;color:#3a424b}
 <li>Trámites de Argentina: ANSES, bancos, seguros y sucesión</li>
 <li>Acceso inmediato por mail</li>
 </ul>
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1" data-cta="oferta">Quiero la carpeta</a>
+<div class="esc">
+<div class="op">
+<h3>1 · La Carpeta</h3>
+<p class="pr">$12.900</p>
+<p>Solo la Carpeta de la Familia.</p>
+<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1" data-cta="op1" data-val="12900">Quiero solo la Carpeta</a>
+</div>
+<div class="op top">
+<span class="tag">EL MÁS ELEGIDO</span>
+<h3>2 · Dúo Familia</h3>
+<p class="pr">$19.900<s>$27.800</s></p>
+<span class="ah">Ahorrás $7.900</span>
+<p>La Carpeta + el Escudo anti-estafas: papeles en orden y la familia cuidada de los cuentos del tío.</p>
+<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1,68151631216939:1?discount=DUO" data-cta="op2" data-val="19900">Quiero el Dúo</a>
+</div>
+<div class="op">
+<span class="tag">MÁS COMPLETO</span>
+<h3>3 · Kit Familia completo</h3>
+<p class="pr">$24.900<s>$40.700</s></p>
+<span class="ah">Ahorrás $15.800</span>
+<p>La Carpeta + el Escudo + Mente Activa (100 hojas para imprimir con ejercicios para los mayores de la casa).</p>
+<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1,68151631216939:1,68134890799403:1?discount=KIT" data-cta="op3" data-val="24900">Quiero el Kit completo</a>
+</div>
+</div>
+<p class="pesos" style="text-align:center;margin-top:10px">Pago único en pesos, con Mercado Pago, débito o tarjeta. Todo llega por mail al instante.</p>
 </div>
 <div class="gar">
 <div class="ico">🛡️</div>
@@ -170,19 +205,19 @@ details p{margin:10px 0 0;color:#3a424b}
 <details><summary>¿Reemplaza a un escribano o a un abogado?</summary><p>No. Es una guía práctica para ordenar la información y saber qué trámites existen. Para el testamento o la sucesión te dice cuándo y con quién tenés que hablar.</p></details>
 <details><summary>¿Necesito Excel?</summary><p>No. La planilla también se abre gratis en Google Sheets, y si preferís papel tenés las fichas para imprimir.</p></details>
 <details><summary>¿Cómo la recibo?</summary><p>Apenas se acredita el pago te llega un mail con el link para descargar la guía, la planilla y las fichas.</p></details>
-<a class="btn" href="https://1rqqmn-us.myshopify.com/cart/68135053984043:1" data-cta="final">Quiero la carpeta · $12.900</a>
+<a class="btn" href="#comprar" data-cta="final">Quiero la carpeta · $12.900</a>
 <p class="mini">Garantía de 7 días · Pago seguro con Mercado Pago</p>
 </div>
 </section>
 
 <div class="fin">Brújula Familiar · soporte.tiendaecomm@gmail.com<br>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</div>
 <script>
-document.querySelectorAll('[data-cta]').forEach(a=>a.addEventListener('click',()=>{try{fbq('trackCustom','ClicComprar',{content_name:'Carpeta de la Familia',value:12900,currency:'ARS'})}catch(e){}}));
+document.querySelectorAll('[data-val]').forEach(a=>a.addEventListener('click',()=>{try{fbq('trackCustom','ClicComprar',{content_name:'Carpeta de la Familia - '+a.dataset.cta,value:+a.dataset.val,currency:'ARS'})}catch(e){}}));
 </script>
 <script>
 // Pasa las cookies de Meta (_fbc/_fbp) al carrito de Shopify: así la venta se une al anuncio aunque se pague en Mercado Pago
 (function(){function ck(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]*)');return m?decodeURIComponent(m[1]):''}
-document.querySelectorAll('a[href*="myshopify.com/cart/"]').forEach(function(a){a.addEventListener('click',function(){try{var fbc=ck('_fbc'),fbp=ck('_fbp'),id=new URLSearchParams(location.search).get('fbclid');if(!fbc&&id)fbc='fb.1.'+Date.now()+'.'+id;var u=new URL(a.href.split('?')[0]);if(fbc)u.searchParams.set('attributes[_fbc]',fbc);if(fbp)u.searchParams.set('attributes[_fbp]',fbp);a.href=u.toString()}catch(e){}})})})();
+document.querySelectorAll('a[href*="myshopify.com/cart/"]').forEach(function(a){a.addEventListener('click',function(){try{var fbc=ck('_fbc'),fbp=ck('_fbp'),id=new URLSearchParams(location.search).get('fbclid');if(!fbc&&id)fbc='fb.1.'+Date.now()+'.'+id;var u=new URL(a.href);if(fbc)u.searchParams.set('attributes[_fbc]',fbc);if(fbp)u.searchParams.set('attributes[_fbp]',fbp);a.href=u.toString()}catch(e){}})})})();
 </script>
 </body>
 </html>
