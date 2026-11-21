@@ -217,6 +217,17 @@ html{scroll-behavior:smooth}</style>
 
 <div class="fin">Brújula Familiar · soporte.tiendaecomm@gmail.com<br>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</div>
 <script>
+// BLACK FRIDAY: se prende solo del 26/11 05:00 al 30/11 23:59 (hora Argentina). Para ver cómo queda antes: agregar ?bf=1 al link.
+(function(){var t=Date.now(),on=(t>=Date.parse('2026-11-26T08:00:00Z')&&t<=Date.parse('2026-12-01T02:59:59Z'))||/[?&]bf=1/.test(location.search);if(!on)return;
+var L='https://1rqqmn-us.myshopify.com/cart/68135053984043:1,68151631216939:1,68134890799403:1?discount=BLACKFRIDAY';
+var st=document.createElement('style');st.textContent='.bfbar{background:#111;color:#fff;text-align:center;font-weight:700;font-size:15px;padding:10px 12px;line-height:1.35}.bfbar b{color:#f5c518}.op.bf{border:2px solid #111}.op.bf .tag{background:#111;color:#f5c518}.bfmini{text-align:center;font-size:14px;margin:-4px 0 8px}';document.head.appendChild(st);
+var bar=document.createElement('div');bar.className='bfbar';bar.innerHTML='<b>BLACK FRIDAY</b> · Las 3 guías por <b>$19.900</b> (antes $24.900) · hasta el lunes 30/11 a las 23:59';document.body.insertBefore(bar,document.body.firstChild);
+var kit=document.querySelector('a[href*="discount=KIT"]');if(kit){var op=kit.closest('.op');op.className='op top bf';op.innerHTML='<span class="tag">BLACK FRIDAY</span><h3>Kit Familia completo</h3><p class="pr">$19.900<s>$24.900</s></p><span class="ah">Ahorrás $5.000</span><p>La Carpeta + el Escudo anti-estafas + Mente Activa. Hasta el lunes 30/11 a las 23:59.</p><a class="btn" href="'+L+'" data-cta="op3bf" data-val="19900">Quiero las 3 guías</a>';op.parentNode.insertBefore(op,op.parentNode.firstChild)}
+var duo=document.querySelector('a[href*="discount=DUO"]');if(duo)duo.closest('.op').style.display='none';
+var h=document.querySelector('a[data-cta="hero"]');if(h){h.href=L;h.textContent='Quiero las 3 guías · $19.900';h.dataset.val='19900';h.dataset.cta='herobf';var m=document.createElement('p');m.className='bfmini';m.innerHTML='Black Friday hasta el lunes 30/11 · <a href="#comprar">Ver las otras opciones</a>';h.parentNode.insertBefore(m,h.nextSibling)}
+})();
+</script>
+<script>
 document.querySelectorAll('[data-val]').forEach(a=>a.addEventListener('click',()=>{try{fbq('trackCustom','ClicComprar',{content_name:'Carpeta de la Familia - '+a.dataset.cta,value:+a.dataset.val,currency:'ARS'})}catch(e){}}));
 </script>
 <script>
